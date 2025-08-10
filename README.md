@@ -26,7 +26,7 @@ StreamYam - это приложение позволяющие стримера�
 
 ## Скриншоты сайта
 
-![alt text]([github\images\start.png](https://github.com/streamyam/frontend/blob/main/github/images/start.png?raw=true))
+![alt text](https://github.com/streamyam/frontend/blob/main/github/images/start.png?raw=true)
 ![alt text](https://github.com/streamyam/frontend/blob/main/github/images/features.png?raw=true)
 ![alt text](https://github.com/streamyam/frontend/blob/main/github/images/dashboard.png?raw=true)
 ## Запуск фронта
