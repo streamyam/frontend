@@ -29,7 +29,7 @@ StreamYam - это приложение позволяющие стримера�
 ![alt text](https://github.com/streamyam/frontend/blob/main/github/images/start.png?raw=true)
 ![alt text](https://github.com/streamyam/frontend/blob/main/github/images/features.png?raw=true)
 ![alt text](https://github.com/streamyam/frontend/blob/main/github/images/dashboard.png?raw=true)
-## Запуск фронта
+## Запуск
 
 Без запущенного [бэкенда](https://github.com/streamyam/baeckend) дашборд (/dashboard) будет недоступен
 
