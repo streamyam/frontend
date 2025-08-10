@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.wrapper {
+    width: 300px;
+    height: 390px;
+    background-color: #282828e8;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+#app-cover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    justify-content: space-between;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#album-art img {
+    width: 100%;
+    height: 100%;
+    background-color: #404040;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+}
+#player-track {
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    overflow: hidden;
+}
+#player-track h4 {
+    font-size: 14px;
+    color: #aaa;
+    margin: 0px auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    display: block;
+    max-width: 100%;
+    text-align: center;
+}
+
+#player-track h2 {
+    font-size: 20px;
+    margin: 10px auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    display: block;
+    max-width: 100%;
+    text-align: center;
+}
+.powered-by-streamyam {
+    margin-top: 20px; 
+    opacity: 0.5;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.powered-by-streamyam img {
+    width: 16px;
+    height: 16px;
+    margin: 2px auto 5px auto;
+    vertical-align: middle;
+}

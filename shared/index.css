@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Импорт шрифта VK Sans Text Medium */
+@font-face {
+  font-family: 'VK Sans Text Medium';
+  src: url('/font/VK_Sans_Text_Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Применяем шрифт VK Sans ко всему контенту по умолчанию */
+@layer base {
+  html, body {
+    font-family: 'VK Sans Text Medium', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}
+
+:root {
+  background-color: #0f172a;
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-scroll-left {
+  animation: scroll-left 30s linear infinite;
+}
+
+.animate-scroll-right {
+  animation: scroll-right 30s linear infinite;
+}
+
+footer {
+  left:0;
+  bottom:0;
+  right:0;
+  flex: 0 0 50px;
+  margin-top: auto;
+}
+
+textarea {
+  font-size: 16px;
+  max-height: 50%;
+  background-color: rgb(59 130 246 / 0.5);
+  color: #ffffff;
+  resize: none;
+}
+
+.ym-font-music {
+  font-family: YSMusic Headline, sans-serif !important;
+  font-weight: 800;
+}
+
+/* Animations for floating circles */
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+  }
+  25% {
+    transform: translateY(-10px) translateX(10px);
+  }
+  50% {
+    transform: translateY(-15px) translateX(-5px);
+  }
+  75% {
+    transform: translateY(-5px) translateX(-10px);
+  }
+}
+
+@keyframes float-medium {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+  }
+  25% {
+    transform: translateY(-15px) translateX(15px);
+  }
+  50% {
+    transform: translateY(-20px) translateX(-10px);
+  }
+  75% {
+    transform: translateY(-10px) translateX(-15px);
+  }
+}
+
+@keyframes float-fast {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+  }
+  25% {
+    transform: translateY(-20px) translateX(20px);
+  }
+  50% {
+    transform: translateY(-30px) translateX(-15px);
+  }
+  75% {
+    transform: translateY(-15px) translateX(-20px);
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 15s ease-in-out infinite;
+}
+
+.animate-float-medium {
+  animation: float-medium 12s ease-in-out infinite;
+}
+
+.animate-float-fast {
+  animation: float-fast 10s ease-in-out infinite;
+}
+
+/* Адаптивные медиа-запросы для мобильных устройств */
+@media (max-width: 640px) {
+  h1.text-5xl {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  
+  .absolute.top-24 {
+    top: 5rem;
+  }
+  
+  .absolute.bottom-20 {
+    bottom: 5rem;
+  }
+}
+
+/* Корректировка размера текста для разных экранов */
+@media (max-width: 480px) {
+  h1.text-5xl {
+    font-size: 2rem;
+  }
+  
+  p.text-xl {
+    font-size: 1rem;
+  }
+}

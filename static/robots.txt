@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /dashboard/
+Disallow: /widget/
+Disallow: /static/
+Disallow: /api/
+Disallow: /dashboard
+
+
+Allow: /
+
+Sitemap: https://streamyam.ru/sitemap.xml
